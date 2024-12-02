@@ -1,0 +1,10 @@
+.tira-luces {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    gap: 20px; /* Espacio entre bombillas */
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    width: 200px;
+  }
+  

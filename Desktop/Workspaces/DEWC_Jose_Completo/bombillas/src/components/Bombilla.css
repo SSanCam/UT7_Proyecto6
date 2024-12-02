@@ -1,0 +1,13 @@
+.bombilla-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.bombilla {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background-color: gray;
+  box-shadow: none; /* Sin sombras cuando apagada */
+}

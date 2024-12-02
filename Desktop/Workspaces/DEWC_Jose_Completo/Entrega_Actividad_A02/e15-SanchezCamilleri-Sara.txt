@@ -1,0 +1,25 @@
+## Pruebas de la función de años bisiestos
+
+### Escenario 1: Años consecutivos con un año bisiesto
+- Entrada: 2020 y 2021
+- Resultado esperado: Solo el año 2020 es bisiesto.
+- Resultado real: "Los años bisiestos entre 2020 y 2021 son: 2020"
+- Observaciones: Comportamiento correcto, el resultado es el esperado.
+
+### Escenario 2: Múltiples años bisiestos en un rango mayor
+- Entrada: 2020 y 2030
+- Resultado esperado: 2020, 2024 y 2028 son bisiestos.
+- Resultado real: "Los años bisiestos entre 2020 y 2030 son: 2020, 2024, 2028"
+- Observaciones: Comportamiento correcto.
+
+### Escenario 3: Ningún año bisiesto en el rango
+- Entrada: 2100 y 2101
+- Resultado esperado: No hay años bisiestos en este rango.
+- Resultado real: "No hay años bisiestos en este rango."
+- Observaciones: Comportamiento correcto.
+
+### Escenario 4: El rango de años es invertido
+- Entrada: 2030 y 2020
+- Resultado esperado: Se intercambian los años, bisiestos son 2020, 2024 y 2028.
+- Resultado real: "Los años bisiestos entre 2020 y 2030 son: 2020, 2024, 2028"
+- Observaciones: El comportamiento es el esperado, la función maneja correctamente el rango invertido.

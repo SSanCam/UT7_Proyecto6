@@ -1,0 +1,61 @@
+/* ======================= */
+/* ESTILOS 404 */
+/* ======================= */
+
+
+/* Contenedor principal */
+.contenedor-global {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    max-width: 800px;
+    text-align: center;
+}
+
+/* Sección superior */
+.superior {
+    position: relative;
+    width: 100%;
+}
+
+/* Imagen de fondo */
+.background-image {
+    width: 100%;
+    height: 40vh; /* Se ajusta para que ocupe la parte media superior */
+    background-image: url("../media/images/404-lightmode.webp");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Texto de error */
+.texto-error h1 {
+    font-family: 'Lemon Juice', Arial, sans-serif;
+    font-size: 3rem;
+    margin-top: 20px;
+}
+
+/* Sección inferior */
+.inferior {
+    margin-top: 20px;
+}
+
+.inferior p {
+    font-family: 'Quicksand', Arial, sans-serif;
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+/* Huella enlazada a la página principal */
+.paw-logo img {
+    width: 60px; /* Ajuste del tamaño */
+    height: auto;
+    transition: transform 0.3s ease;
+    margin-top: 15px;
+}
+
+.paw-logo img:hover {
+    transform: scale(1.2);
+}

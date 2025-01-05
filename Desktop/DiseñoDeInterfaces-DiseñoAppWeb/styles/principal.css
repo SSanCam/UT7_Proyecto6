@@ -1,0 +1,41 @@
+/* ======================= */
+/* ESTILOS ESPECÍFICOS PARA principal.html */
+/* ======================= */
+.contenedor {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.container-texto {
+    width: 50%; 
+    padding-top: 30px;
+    padding: 20px; 
+    font-family: 'Quicksand', Arial, sans-serif;
+}
+
+.container-imagen {
+    width: 50%;
+    padding: 20px;
+}
+
+/* ======================= */
+/* ESTILOS ESPECÍFICOS PARA principal.html */
+/* ======================= */
+.contenedor {
+    display: flex; /* Display the containers in a row */
+    align-items: flex-start; /* Align items at the start of the container */
+    justify-content: space-between; /* Add space between the containers */
+}
+
+.container-texto {
+    width: 50%; 
+    padding-top: 30px;
+    padding: 20px; 
+    font-family: 'Quicksand', Arial, sans-serif; /* Use 'Quicksand' font */
+}
+
+.container-imagen {
+    width: 50%; /* Adjust width as needed */
+    padding: 20px; /* Add padding if needed */
+}

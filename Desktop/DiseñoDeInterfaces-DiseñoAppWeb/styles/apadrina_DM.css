@@ -1,4 +1,7 @@
-/* Estilos generales */
+/* ======================= */
+/* FORMULARIO DE APADRINAMIENTO */
+/* ======================= */
+
 .formulario {
     width: 90%;
     max-width: 600px;
@@ -10,38 +13,40 @@
 
 .formulario h2, .formulario h3 {
     text-align: center;
-    color: #33691D;
-    margin-bottom: 10px;
+    color: #8BC24A; /* Verde claro */
 }
 
 .formulario div {
     margin-bottom: 15px;
 }
 
-.container-main h1 {
-    margin-bottom: 20px;
-}
-
 label {
     font-weight: bold;
     display: block;
     margin-bottom: 5px;
+    color: #ffffff; /* Texto en blanco */
 }
 
-input, select, textarea {
-    width: 100%;
+input, select {
+    width: 100%; /* Ajuste correcto */
+    max-width: 500px; /* Limita el ancho máximo */
+    display: block;
     padding: 8px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
+    margin: auto;
+    background-color: #ffffff; /* Fondo oscuro de los inputs */
+    color: #000000; 
     border-radius: 5px;
+    font-size: 1rem;
 }
 
 button {
     display: block;
     width: 100%;
+    max-width: 500px; /* Evita que sea más ancho */
+    margin: auto;
     padding: 10px;
-    background-color: #33691D;
-    color: white;
+    background-color: #8BC24A;
+    color: #63797F;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -49,7 +54,7 @@ button {
 }
 
 button:hover {
-    background-color: #285417;
+    background-color: #A5D6A7;
 }
 
 /* ======================= */
@@ -60,8 +65,8 @@ button:hover {
     .formulario {
         width: 95%;
     }
-    
-    input, select {
-        font-size: 1rem;
+
+    input, select, button {
+        max-width: 100%; /* En pantallas pequeñas ocupa todo el ancho */
     }
 }

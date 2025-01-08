@@ -1,6 +1,7 @@
-/* ✅ Ocultar popup al cargar la página */
+/* ✅ Evita que el popup aparezca antes de ser ocultado por JavaScript */
 .popup {
     display: none;
+    visibility: hidden;  /* 🔹 Asegura que no parpadee en la carga */
     position: fixed;
     z-index: 1000;
     left: 0;
@@ -12,7 +13,13 @@
     align-items: center;
 }
 
-/* ✅ Ajustar solo cuando se active con JavaScript */
+/* ✅ Mostrar correctamente cuando se active con JavaScript */
+.popup.show {
+    display: flex;
+    visibility: visible;
+}
+
+/* ✅ Ajuste para mejorar compatibilidad con Dark Mode */
 .popup-content {
     background-color: #ffffff;
     padding: 20px;

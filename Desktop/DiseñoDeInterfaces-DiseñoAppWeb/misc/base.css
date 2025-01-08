@@ -368,3 +368,17 @@ footer {
 .popup-content button:hover {
     background-color: #8BC24A;
 }
+
+/* ======================= */
+/* RESPONSIVE */
+/* ======================= */
+
+@media screen and (max-width: 768px) {
+    .formulario {
+        width: 95%;
+    }
+    
+    input, select {
+        font-size: 1rem;
+    }
+}

@@ -1,13 +1,15 @@
 // ✅ Función para abrir el popup de donación cuando se hace clic en "Dona"
 function abrirPopupDonacion() {
-    document.getElementById("popup-donacion").style.display = "flex";
+    let popup = document.getElementById("popup-donacion");
+    popup.classList.add("show");  // 🔹 Usa una clase en lugar de manipular directamente `display`
 }
 
 // ✅ Función para cerrar el popup de donación al hacer clic en "Cancelar" o "Aceptar"
 function cerrarPopupDonacion() {
-    document.getElementById("popup-donacion").style.display = "none";
-    document.getElementById("form-donacion").style.display = "block";  // Volver a mostrar el formulario
-    document.getElementById("mensaje-confirmacion").style.display = "none";  // Ocultar mensaje de éxito
+    let popup = document.getElementById("popup-donacion");
+    popup.classList.remove("show"); // 🔹 Usa la clase para ocultarlo correctamente
+    document.getElementById("form-donacion").style.display = "block";  
+    document.getElementById("mensaje-confirmacion").style.display = "none";
 }
 
 // ✅ Función para procesar la donación y mostrar mensaje de éxito
@@ -27,7 +29,8 @@ function procesarDonacion(event) {
     }
 }
 
-// ✅ Ocultar el popup al cargar la página para evitar que aparezca solo
+// ✅ Asegurar que el popup se oculta al cargar la página sin parpadeo
 document.addEventListener("DOMContentLoaded", function () {
-    document.getElementById("popup-donacion").style.display = "none";
+    let popup = document.getElementById("popup-donacion");
+    popup.classList.remove("show"); // 🔹 Se oculta correctamente
 });

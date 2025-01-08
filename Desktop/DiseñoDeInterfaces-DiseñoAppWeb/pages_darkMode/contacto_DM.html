@@ -4,48 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Refugio Kimba</title>
+    <title>Refugio Kimba - Contacta
+    </title>
     <link rel="stylesheet" href="../misc/base.css">
-    <link rel="stylesheet" href="../styles/dona.css">
+    <link rel="stylesheet" href="../styles/contacto.css">
 </head>
 
 <body>
 
-    <!-- ✅ Ventana emergente de donación -->
-    <div id="popup-donacion" class="popup">
-        <div class="popup-content">
-            <h2>Donación</h2>
-
-            <!-- Formulario de donación -->
-            <form id="form-donacion" onsubmit="procesarDonacion(event)">
-                <label for="titular">Nombre del titular:</label>
-                <input type="text" id="titular" name="titular" required>
-
-                <label for="tarjeta">Número de tarjeta:</label>
-                <input type="text" id="tarjeta" name="tarjeta" maxlength="16" pattern="\d{16}" required>
-
-                <label for="cvv">CVV:</label>
-                <input type="text" id="cvv" name="cvv" maxlength="3" pattern="\d{3}" required>
-
-                <label for="cantidad">Cantidad a donar (€):</label>
-                <input type="number" id="cantidad" name="cantidad" min="1" required>
-
-                <button type="submit">Donar</button>
-                <button type="button" onclick="cerrarPopupDonacion()">Cancelar</button>
-            </form>
-
-            <!-- Mensaje de confirmación (inicialmente oculto) -->
-            <div id="mensaje-confirmacion" style="display: none;">
-                <p>Donación realizada con éxito. ¡Gracias por tu apoyo!</p>
-                <button onclick="cerrarPopupDonacion()">Aceptar</button>
-            </div>
-        </div>
-    </div>
-
     <!-- HEADER -->
     <header>
         <div class="container-header">
-            <div class="header-left-space"></div>
+            <div class="header-left-space"></div> <!-- Espacio vacío para centrar el menú -->
 
             <div class="header-left">
                 <a href="../pages_lightMode/principal.html">
@@ -68,7 +38,7 @@
                     <a class="nav-link">Ayúdales</a>
                     <ul class="dropdown-menu">
                         <li><a href="../pages_lightMode/acoge.html">🏠 Acoge</a></li>
-                        <li><a href="#" onclick="abrirPopupDonacion(); return false;">💰 Dona</a></li>
+                        <li><a href="../pages_lightMode/dona.html">💰 Dona</a></li>
                         <li><a href="../pages_lightMode/apadrina.html">❤️ Apadrina</a></li>
                     </ul>
                 </div>
@@ -83,16 +53,38 @@
                 <a href="perfil.html" class="icon"><img src="../media/iconos/perfil_LM.png" alt="Perfil"></a>
             </div>
 
-            <div class="header-right-space"></div>
+            <div class="header-right-space"></div> <!-- Espacio vacío para equilibrar -->
         </div>
     </header>
 
-    <!-- CONTENIDO PRINCIPAL -->
-    <main class="container-main"></main>
 
-    <!-- SCRIPTS -->
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="container-main">
+        <h1>📞 Contacto</h1>
+
+        <section class="formulario-contacto">
+            <form action="#" method="POST">
+                <h2>Formulario de Contacto</h2>
+
+                <label for="nombre">Nombre completo</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="telefono">Teléfono de contacto</label>
+                <input type="tel" id="telefono" name="telefono" required>
+
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
     <script src="../misc/base.js"></script>
-    <script src="../scripts/donacion.js"></script>
 
     <!-- FOOTER -->
     <footer>
@@ -105,10 +97,11 @@
                 <a href="../pages_lightMode/error_404.html">Política de Cookies</a>
             </nav>
             <div class="social-icons">
-                <a href="https://www.facebook.com/refugiokimba.org/?locale=es_ES" target="_blank">
+                <a href="https://www.facebook.com/refugiokimba.org/?locale=es_ES" target="_blank"
+                    rel="noopener noreferrer">
                     <img src="../media/iconos/logo-facebook.svg" alt="Facebook">
                 </a>
-                <a href="https://www.instagram.com/refugio_kimba/" target="_blank">
+                <a href="https://www.instagram.com/refugio_kimba/" target="_blank" rel="noopener noreferrer">
                     <img src="../media/iconos/logo-instagram.svg" alt="Instagram">
                 </a>
             </div>

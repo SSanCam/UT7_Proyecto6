@@ -3,11 +3,11 @@
 /* ======================= */
 
 body {
-    background: url('../media/images/404-ligthmode.jpg') no-repeat center center fixed;
+    background: url('../media/images/construccion.png') no-repeat center center fixed;
     background-size: 50%; /* Ajusta el tamaño de la imagen para cubrir toda la pantalla */
     height: 100vh; /* Asegura que el fondo ocupe toda la altura de la ventana */
     margin: 0;
-    background-color: #E0E0D4;
+    background-color: #DED8C8;
 }
 
 /* Fondo de la imagen dentro del div */
@@ -19,7 +19,7 @@ body {
     width: 100%;
     max-width: 600px;  /* Tamaño controlado */
     height: auto;
-    background-image: url("../media/images/404-lightmode.webp");
+    background-image: url("../media/images/construccion.png");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;

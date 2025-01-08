@@ -3,11 +3,11 @@
 /* ======================= */
 
 body {
-    background: url('../media/images/404-ligthmode.jpg') no-repeat center center fixed;
+    background: url('../media/images/404-darkmode.jpg') no-repeat center center fixed;
     background-size: 50%; /* Ajusta el tamaño de la imagen para cubrir toda la pantalla */
     height: 100vh; /* Asegura que el fondo ocupe toda la altura de la ventana */
     margin: 0;
-    background-color: #E0E0D4;
+    background-color: #233746;
 }
 
 /* Fondo de la imagen dentro del div */
@@ -19,13 +19,13 @@ body {
     width: 100%;
     max-width: 600px;  /* Tamaño controlado */
     height: auto;
-    background-image: url("../media/images/404-lightmode.webp");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     opacity: 0.2; /* Opacidad del 50% */
     z-index: -1; /* Se coloca detrás del contenido */
 }
+
 
 /* Contenedor principal */
 .contenedor-global {
@@ -55,6 +55,7 @@ body {
 
 /* Texto de error */
 .texto-error h1 {
+    color: #ffffff;
     font-family: 'Lemon Juice', Arial, sans-serif;
     font-size: 5rem;
     margin-bottom: 20px;
@@ -62,6 +63,8 @@ body {
 
 /* Texto complementario */
 .texto-complementario p {
+    color: #ffffff;
+
     font-family: 'Quicksand_Bold', Arial, sans-serif;
     font-size: 1.2rem;
     margin: 5px 0;
@@ -72,7 +75,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 .paw-logo img {
